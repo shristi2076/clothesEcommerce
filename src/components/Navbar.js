@@ -1,45 +1,45 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
+import CheckroomIcon from '@mui/icons-material/Checkroom';
+import './styles.css';
+// import {CheckroomIcon} from '@mui/icons-material/Checkroom';
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">FitMe</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Order List</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Products</a>
-        </li>
-        {/* <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/">Action</a></li>
-            <li><a className="dropdown-item" href="/">Another action</a></li>
-            {/* <li>< className="dropdown-divider"></li> */}
-            {/* <li><a className="dropdown-item" href="/">Something else here</a></li>
-          </ul>
-        </li> */} 
+    
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark data-bs-theme='dark'">
+      <div className="container-fluid">
+      <CheckroomIcon className="hanger"/>
+      <a className="navbar-brand fw-bold fs-4 " href="/">
+       
+         Fit-Me</a>
+      
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+          <li className="nav-item">
+            <a className="nav-link active" padding-right='80px' aria-current="page" href="/order">Order</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link active" padding-right='80px' aria-current="page" href="/product">Products</a>
+          </li>
+          
+          {/* <li className="nav-item">
+            {/* <a className="nav-link active" padding-right='80px' aria-current="page" >Hi! admin</a>
+          </li> */} 
         
-        
-      </ul>
-      <form className="d-flex" role="search">
-        {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
-        <button className="btn btn-outline-success" type="submit">Log Out</button>
-      </form>
+        </ul>
+      
+        <form className="d-flex" role="search">
+          {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>  */}
+          {/* <li style="list-style: none; margin: auto; padding-right: 10px; padding-left: 30px;"> hi! admin</li> */}
+          <Link to="/signup">
+          <button className="btn btn-dark"  type="submit" >
+            Log Out</button> 
+          </Link>
+          
+        </form> 
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   )
 }
 

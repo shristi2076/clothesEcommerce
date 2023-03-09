@@ -7,11 +7,25 @@ import App from './App';
 // import Admin from './components/Admin';
 // import SignUp from './SignUp';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import Admin from './components/Admin';
+import Product from './components/Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/order" element={<Admin/>}/>
+        <Route path="/product" element={<Product/>}/>
+        
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

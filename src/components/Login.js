@@ -80,7 +80,7 @@ function Login() {
         </div>  */}
         <div className="box">
           <p>No account?</p>
-          <a href="./SignUp.js">Sign Up</a>
+          <a href="/signup">Sign Up</a>
           {/* <Link to="/signup">SignUp</Link> */}
 
         </div>

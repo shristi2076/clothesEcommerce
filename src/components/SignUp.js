@@ -2,7 +2,7 @@ import React from "react";
 import './Login.js';
 // import { Link } from 'react-router-dom'
 // import ReactDOM from "react-dom";
-import "./styles.css";
+import "./signup.css";
 
 function SignUp() {
   const pass1= document.getElementsByName("pass");

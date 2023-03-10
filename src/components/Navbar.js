@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import CheckroomIcon from '@mui/icons-material/Checkroom';
-import './styles.css';
-// import {CheckroomIcon} from '@mui/icons-material/Checkroom';
-const Navbar = () => {
+import './navbar.css';
+
+// const Navbar = () => {
+  const styles = {
+    activity: { height: 50, width: 30, },
+  };
+  
+  const Navbar = (props) => {
+   
   return (
     
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark data-bs-theme='dark'">
       <div className="container-fluid">
-      <CheckroomIcon className="hanger"/>
+      <CheckroomIcon  className="hanger" style={styles.activity} {...props} />
       <a className="navbar-brand fw-bold fs-4 " href="/">
-       
          Fit-Me</a>
       
       <div className="collapse navbar-collapse" id="navbarSupportedContent">

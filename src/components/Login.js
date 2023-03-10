@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import  "./SignUp";
 // import ReactDOM from "react-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
 
@@ -43,6 +43,7 @@ function Login() {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
+        
       }
     } else {
       // Username not found
@@ -71,13 +72,12 @@ function Login() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
+          <Link to="/order"> 
           <input type="submit" />
+           </Link>
+         
         </div>
-        {/* <div className="acc">
-          <p>No account?</p>
-         {/* <button className="link" onClick="Login.js">Sign Up</button> */}
-            {/* <a className="link" href="SignUp.js">SignUp</a>
-        </div>  */}
+      
         <div className="box">
           <p>No account?</p>
           <a href="/signup">Sign Up</a>

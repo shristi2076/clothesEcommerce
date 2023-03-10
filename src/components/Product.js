@@ -6,10 +6,9 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import DescriptionIcon from '@mui/icons-material/Description';
 import StorageIcon from '@mui/icons-material/Storage';
 import SpellcheckIcon from '@mui/icons-material/Spellcheck';
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 
 function Product() {
-
+    
     return (
         <>
             <div className="newProductContainer">
@@ -22,14 +21,12 @@ function Product() {
 
                     <div>
                         <SpellcheckIcon />
-                        {/* <ShoppingCartIcon/> */}
                         <input
                             type="text"
                             placeholder="Product Name" />
                     </div>
                     <div>
                         <AttachMoneyIcon />
-                        {/* <img  src="images/dollar.png"/> */}
                         <input
                             type="number"
                             placeholder="Price" />
@@ -37,7 +34,6 @@ function Product() {
 
                     <div>
                         <DescriptionIcon />
-
                         <textarea
                             placeholder="Product Description"
                         ></textarea>
@@ -59,6 +55,7 @@ function Product() {
                     <Button
                         id="createProductBtn"
                         type="submit"
+                        onClick={()=>alert('Product Created Successfully!')}
                     >
                         Create
                     </Button>

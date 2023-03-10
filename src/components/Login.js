@@ -3,7 +3,7 @@ import  "./SignUp";
 // import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
-import "./styles.css";
+import "./login.css";
 
 function Login() {
   // React States

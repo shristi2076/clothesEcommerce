@@ -1,18 +1,16 @@
 import './App.css';
-// import Login from './components/Login';
+import Login from './components/Login';
 // import SignUp from './components/SignUp';
-import Admin from './components/Admin';
+// import Admin from './components/Admin';
 // import Product from './components/Product';
-// import Hi from './components/Hi';
 
 function App() {
   return (
     <>
     {/* <Product/> */}
-    <Admin/>
-    {/* <Login/> */}
+    {/* <Admin/> */}
+    <Login/>
     {/* <SignUp/> */}
-    {/* <Hi/> */}
     </>
   );
 }

@@ -23,7 +23,6 @@ root.render(
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/order" element={<Admin/>}/>
         <Route path="/product" element={<Product/>}/>
-        
       </Routes>
     </Router>
   </React.StrictMode>
